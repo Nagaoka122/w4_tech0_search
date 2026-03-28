@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS click_logs (
 );
 
 -- インデックス作成（検索を高速化する）
-CREATE INDEX IF NOT EXISTS idx_keyword      ON keywords(keyword);
-CREATE INDEX IF NOT EXISTS idx_page_id      ON keywords(page_id);
+CREATE INDEX IF NOT EXISTS idx_keyword    ON keywords(keyword);
+CREATE INDEX IF NOT EXISTS idx_page_id    ON keywords(page_id);
 CREATE INDEX IF NOT EXISTS idx_search_query ON search_logs(query);
 CREATE INDEX IF NOT EXISTS idx_search_date  ON search_logs(searched_at);
